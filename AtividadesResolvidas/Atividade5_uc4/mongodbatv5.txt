@@ -1,0 +1,103 @@
+use atividade5
+'switched to db atividade5'
+db.cargo.insertOne({id: 1, cargo: "Gerente", salario: 5000})
+{ acknowledged: true,
+  insertedId: ObjectId("62f956916fce50b02523bd2a") }
+db.cargo.insertOne({id: 2, cargo: "Vendedor", salario: 2500, comissao: 10})
+{ acknowledged: true,
+  insertedId: ObjectId("62f956b06fce50b02523bd2b") }
+db.cargo.insertOne({id: 3, cargo: "Servicos gerais", salario: 1500})
+{ acknowledged: true,
+  insertedId: ObjectId("62f956c46fce50b02523bd2c") }
+db.cargo.insertOne({id: 4, cargo: "Supervisor de Vendas", salario: 2800, comissao: 10})
+{ acknowledged: true,
+  insertedId: ObjectId("62f956df6fce50b02523bd2d") }
+db.cargo.insertOne({id: 5, cargo: "Estoquistas", salario: 2000})
+{ acknowledged: true,
+  insertedId: ObjectId("62f956f56fce50b02523bd2e") }
+
+db.usuario.insertOne({id: 1, login: "admin", senha: "827ccb0eea8a706c4c34a16891f84e7b", ultimo_login:"2022-01-10 10:00:00"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f957f76fce50b02523bd2f") }
+db.usuario.insertOne({id: 2, login: "gerencia", senha: "1e01ba3e07ac48cbdab2d3284d1dd0fa", ultimo_login:"2022-01-10 10:00:00"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f958116fce50b02523bd30") }
+db.usuario.insertOne({id: 3, login: "dev", senha: "3fde6bb0541387e4ebdadf7c2ff31123", ultimo_login:"2022-01-10 10:00:00"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f958266fce50b02523bd31") }
+db.usuario.insertOne({id: 4, login: "silvioc", senha: "ecb22d57339b946f66817e43583e51ce", ultimo_login:"2022-01-10 10:00:00"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f958356fce50b02523bd32") }
+db.usuario.insertOne({id: 5, login: "amarov", senha: "b6a9aa2d969ff39152525950a9bcc621", ultimo_login:"2022-01-10 10:00:00"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f958436fce50b02523bd33") }
+db.usuario.insertOne({id: 6, login: "marcosv", senha: "9880c35d8804ed40f467de976963966b", ultimo_login:"2022-01-10 10:00:00"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f958516fce50b02523bd34") }
+db.usuario.insertOne({id: 7, login: "domingass", senha: "7be1c7aa830807bbddd76a839af5fcf6", ultimo_login:"2022-01-10 10:00:00"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f9585e6fce50b02523bd35") }
+db.usuario.insertOne({id: 8, login: "marinaf", senha: "9880c35d8804ed40f467de976963966b", ultimo_login:"2022-01-10 10:00:00"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f958706fce50b02523bd36") }
+db.usuario.insertOne({id: 9, login: "joanaf", senha: "44916f3395f3bd20e1bbf1c4eeacd1da", ultimo_login:"2022-01-10 10:00:00"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f958836fce50b02523bd37") }
+db.usuario.insertOne({id: 10, login: "apariciod", senha: "21d19c3560ddb85975b9dd27388b95b7", ultimo_login:"2022-01-10 10:00:00"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f958916fce50b02523bd38") }
+db.usuario.insertOne({id: 11, login: "filomenal", senha: "2cd4c59c6eac31f2c03cf734f4fc1c91", ultimo_login:"2022-01-10 10:00:00"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f9589e6fce50b02523bd39") }
+db.usuario.insertOne({id: 12, login: "relatorio1", senha: "7fab7baaf7fc992cf1403d364e3c151b"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f958b26fce50b02523bd3a") }
+db.usuario.insertOne({id: 13, login: "funcionario1", senha: "b3ed204f664e2c55438fd22c4abb5e53"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f958c06fce50b02523bd3b") }
+db.usuario.insertOne({id: 14, login: "Lucas Andrade", senha: "1dc187f92fa9d62b43cdb4549ea0ebab", ultimo_login:"2022-08-11 10:00:00"})
+{ acknowledged: true,
+  insertedId: ObjectId("62f958dd6fce50b02523bd3c") }
+
+db.funcionario.insertOne({nome: "Sílvio Cortês", telefone: "99 7898-1234", cpf: "84537768061", id:1, cargo_id: 2, usuario_id: 4})
+{ acknowledged: true,
+  insertedId: ObjectId("62f959d56fce50b02523bd3d") }
+db.funcionario.insertOne({nome: "Amaro Valadão", telefone: "99 7534-1234", cpf: "03074142057", id:2, cargo_id: 2, usuario_id: 5})
+{ acknowledged: true,
+  insertedId: ObjectId("62f95a186fce50b02523bd3e") }
+db.funcionario.insertOne({nome: "Marcos Valadão", telefone: "99 7534-7897", cpf: "40967947081", id:3, cargo_id: 2, usuario_id: 6})
+{ acknowledged: true,
+  insertedId: ObjectId("62f95a346fce50b02523bd3f") }
+db.funcionario.insertOne({nome: "Domingas Souza Sá", telefone: "99 7534-1234", cpf: "51077408048", id:4, cargo_id: 4, usuario_id: 7})
+{ acknowledged: true,
+  insertedId: ObjectId("62f95a4e6fce50b02523bd40") }
+db.funcionario.insertOne({nome: "Marina Frazão", telefone: "99 7589-1854", cpf: "21788502000", id:5, cargo_id: 1, usuario_id: 8})
+{ acknowledged: true,
+  insertedId: ObjectId("62f95a696fce50b02523bd41") }
+db.funcionario.insertOne({nome: "Joana Freitas", telefone: "99 7589-7534", cpf: "85690938025", id:6, cargo_id: 3, usuario_id: 9})
+{ acknowledged: true,
+  insertedId: ObjectId("62f95a816fce50b02523bd42") }
+db.funcionario.insertOne({nome: "Aparício Dias", telefone: "99 7514-7884", cpf: "14131448025", id:7, cargo_id: 3, usuario_id: 10})
+{ acknowledged: true,
+  insertedId: ObjectId("62f95a986fce50b02523bd43") }
+db.funcionario.insertOne({nome: "Filomena da Luz", telefone: "99 7584-7884", cpf: "19641782070", id:8, cargo_id: 5, usuario_id: 11})
+{ acknowledged: true,
+  insertedId: ObjectId("62f95aad6fce50b02523bd44") }
+
+db.funcionario.find({nome: "Sílvio Cortês"})
+{ _id: ObjectId("62f959d56fce50b02523bd3d"),
+  nome: 'Sílvio Cortês',
+  telefone: '99 7898-1234',
+  cpf: '84537768061',
+  id: 1,
+  cargo_id: 2,
+  usuario_id: 4 }
+
+db.funcionario.find({cargo_id: 1})
+{ _id: ObjectId("62f95a696fce50b02523bd41"),
+  nome: 'Marina Frazão',
+  telefone: '99 7589-1854',
+  cpf: '21788502000',
+  id: 5,
+  cargo_id: 1,
+  usuario_id: 8 }
